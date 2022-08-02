@@ -14,8 +14,8 @@ function printElement($degreeOfNesting, $text, $finite = false)
     $outputHtml = "<pre>";
     // добавляю отступы
     $outputHtml .= str_repeat("     ", $degreeOfNesting);
-    //$finite ? $outputHtml .= "-" : $outputHtml .= "+";
-    $outputHtml .= $finite ? $text . "</pre>" : "<i>" . $text . "</i></pre>";
+    $finite ? $outputHtml .= "-" : $outputHtml .= "+ ";
+    $outputHtml .= $finite ? $text . "</pre>" : "<b><i>" . $text . "</i></b></pre>";
     echo $outputHtml;
 }
 
@@ -27,15 +27,14 @@ function printElement($degreeOfNesting, $text, $finite = false)
  */
 function recursiveByPass($data, $degreeOfNesting)
 {
-    if (is_array($data)) {
-        foreach ($data as $key => $value) {
-            printElement($degreeOfNesting, $key);
-            recursiveByPass($value, $degreeOfNesting + 1);
+    foreach ($data as $key => $value) {
+        if (isset($value['isFolder']) && $value['isFolder']) {
+            printElement($degreeOfNesting, $value['title']);
+            recursiveByPass($value['children'], $degreeOfNesting + 1);
+        } else {
+            printElement($degreeOfNesting, $value['title'], true);
         }
-    } else {
-        printElement($degreeOfNesting, $data, true);
     }
-
 }
 
 $pathToFile = "json.json";
