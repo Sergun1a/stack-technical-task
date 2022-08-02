@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Ознакомление с программой",
+    "isFolder": true,
+    "key": "1",
+    "children": [
+      {
+        "title": "1) Вход в задачу. Рабочий месяц.",
+        "key": "1_Vhod.flv"
+      },
+      {
+        "title": "2) Поиск",
+        "key": "2_Poisk.flv"
+      },
+      {
+        "title": "3) Изменение записей",
+        "key": "3_Izmenenie.flv"
+      },
+      {
+        "title": "4) Перемещение записей",
+        "key": "4_Pereimenovanie.flv"
+      },
+      {
+        "title": "5) Массовое  копирование",
+        "key": "5_Massovoe.flv"
+      },
+      {
+        "title": "6) Расчет. Перерасчет",
+        "key": "6_Rashet.flv"
+      },
+      {
+        "title": "7) Суммирование записей",
+        "key": "7_Summirovanie.flv"
+      },
+      {
+        "title": "8) Печать справок с ЛС и квитанций",
+        "key": "8_Pechat.flv"
+      },
+      {
+        "title": "9) Помощь. Выход",
+        "key": "9_Pomosh.flv"
+      }
+    ]
+  },
+  {
+    "title": "Создание адресного списка",
+    "isFolder": true,
+    "key": "2",
+    "children": [
+      {
+        "title": "1) Простая схема адресов",
+        "key": "1_Prostaja_shema_adresov.flv"
+      },
+      {
+        "title": "2) Использование уровня ЛУ",
+        "key": "2_Ispol'zovanie_urovnja_LU.flv"
+      },
+      {
+        "title": "3) Использование уровня НП",
+        "key": "3_Ispol'zovanie_urovnja_NP.flv"
+      }
+    ]
+  },
+  {
+    "title": "Индивидуальные счетчики",
+    "isFolder": true,
+    "key": "3",
+    "children": [
+      {
+        "title": "Групповые счетчики",
+        "isFolder": true,
+        "key": "4",
+        "children": [
+          {
+            "title": "1) Создание группового счетчика",
+            "key": "1_Sozdanie_gr.flv"
+          },
+          {
+            "title": "2) Создание кустового счетчика",
+            "key": "2_Sozdanie_kust.flv"
+          },
+          {
+            "title": "3) Ввод показаний",
+            "key": "3_Vvod.flv"
+          },
+          {
+            "title": "Платежные ведомости",
+            "isFolder": true,
+            "key": "5",
+            "children": [
+              {
+                "title": "1) Создание платежа",
+                "key": "1_Plateshniye vedomosti.flv"
+              },
+              {
+                "title": "2) Подкачка платежей",
+                "key": "2_Podkachka plateshey.flv"
+              },
+              {
+                "title": "3) Проблемные платежи",
+                "key": "3_Problemniye plateshi.flv"
+              }
+            ]
+          },
+          {
+            "title": "4) Распределение показаний",
+            "key": "4_Raspredelenie.flv"
+          },
+          {
+            "title": "5) Снятие и восстановление счетчика",
+            "key": "5_Sniatie.flv"
+          }
+        ]
+      },
+      {
+        "title": "1) Установка индивидуального счетчика",
+        "key": "1_Ustanovka.flv"
+      },
+      {
+        "title": "2) Ввод показаний",
+        "key": "2_Vvod.flv"
+      },
+      {
+        "title": "3) Снятие, восстановление и замена счетчика",
+        "key": "3_Sniatie.flv"
+      },
+      {
+        "title": "4) Обработка исключительных случаев",
+        "key": "4_Obrabotka.flv"
+      }
+    ]
+  },
+  {
+    "title": "Льготы",
+    "isFolder": true,
+    "key": "6",
+    "children": [
+      {
+        "title": "1) Создание льготы",
+        "key": "1_Sozdanie_nastrojka_l'goty.flv"
+      },
+      {
+        "title": "2) Создание льготника",
+        "key": "2_Zavedenie_l'gotnika.flv"
+      },
+      {
+        "title": "3)Отчеты",
+        "key": "33_Otchety.flv"
+      }
+    ]
+  }
+]
