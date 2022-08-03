@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "74106f90-adc6-447d-bf0e-30a2328b38e2",
+		"name": "Rest api collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Добавить данные о книге в базу",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/task_2?action=create&name=book_name&author=book_author&year=2022",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"task_2"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "create"
+						},
+						{
+							"key": "name",
+							"value": "book_name",
+							"description": "Обязательное поле. Название книги."
+						},
+						{
+							"key": "author",
+							"value": "book_author",
+							"description": "Обязательное поле. Автор книги."
+						},
+						{
+							"key": "year",
+							"value": "2022",
+							"description": "Обязательное поле. Год выпуска книги."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить список книг",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/task_2?action=read",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"task_2"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "read"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Поиск книги по фильтру/фильтрам",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}?action=read&name=book_name",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "read"
+						},
+						{
+							"key": "name",
+							"value": "book_name",
+							"description": "Любое поле книги (id,name, author или year). Необязательное поле."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Обновить данные о книге",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}?action=update&id=4&name=updated_book_name&year=1999",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update"
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"description": "Обязательное поле. Id книги в базе."
+						},
+						{
+							"key": "name",
+							"value": "updated_book_name",
+							"description": "Любое поле книги (name, author или year). Необязательное поле."
+						},
+						{
+							"key": "year",
+							"value": "1999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаляю книгу",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/task_2?action=delete&id=3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"task_2"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "delete"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"description": "Обязательное поле. Id книги в базе."
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://stack-technical-task/task_2"
+		}
+	]
+}
